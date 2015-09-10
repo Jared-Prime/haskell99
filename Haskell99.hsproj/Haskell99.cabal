@@ -8,7 +8,7 @@ copyright: Jared Davis
 maintainer: Jared Davis
 build-depends:
 stability: experimental
-homepage:
+homepage: https://github.com/Jared-Prime/haskell99
 package-url:
 bug-reports:
 synopsis:
