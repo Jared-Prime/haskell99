@@ -6,35 +6,99 @@
 </description>
     <link>http://haskell.haiqus.com/</link>
     <atom:link href="http://haskell.haiqus.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 11 Sep 2015 20:30:36 -0500</pubDate>
-    <lastBuildDate>Fri, 11 Sep 2015 20:30:36 -0500</lastBuildDate>
+    <pubDate>Fri, 11 Sep 2015 20:34:19 -0500</pubDate>
+    <lastBuildDate>Fri, 11 Sep 2015 20:34:19 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve --watch&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>haskell problem 1</title>
+        <description>&lt;ol&gt;
+  &lt;li&gt;tools:
+    &lt;ul&gt;
+      &lt;li&gt;another installation is the &lt;a href=&quot;https://www.haskell.org/platform/&quot;&gt;official platform&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;once you have a working installation, the program &lt;code&gt;ghci&lt;/code&gt; launches the interactive repl&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;resources:
+    &lt;ul&gt;
+      &lt;li&gt;no new ones today&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;tricks / techniques:
+    &lt;ul&gt;
+      &lt;li&gt;the solution below follows the standard sourcefile construction of Haskell code. but we can define functions “on the fly” by using the &lt;code&gt;let { }&lt;/code&gt; constructor&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;solutions:
+    &lt;ul&gt;
+      &lt;li&gt;as a sourcefile:&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;!-- the markdown engine is not handling the Haskell code well --&gt;
+&lt;pre&gt;&lt;code&gt;myLast :: [a] -&amp;gt; a
+myLast []     = error &quot;empty list&quot;
+myLast [x]    = x
+myLast (_:xs) = myLast xs&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;dynamically in GHCi:&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
-
+&lt;pre&gt;&lt;code&gt;let {
+  myLast2 []     = error &quot;empty list&quot;
+  myLast2 [x]    = x
+  myLast2 (_:xs) = myLast2 xs
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So the main (casual) observation is that a function has two components: the type declaration and the function implementation. When writing source code, the type declaration is required; when dynamically creating a function in the repl, the compiler infers the type signature from its definition. The function implementation mechanically works via pattern matching – a very powerful concept that we’ll eventually get around to learning in depth. Otherwise, a good first exercise!&lt;/p&gt;
 </description>
-        <pubDate>Fri, 11 Sep 2015 15:26:19 -0500</pubDate>
-        <link>http://haskell.haiqus.com/jekyll/update/2015/09/11/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://haskell.haiqus.com/jekyll/update/2015/09/11/welcome-to-jekyll/</guid>
+        <pubDate>Thu, 10 Sep 2015 19:00:00 -0500</pubDate>
+        <link>http://haskell.haiqus.com/lessons/haskell/2015/09/10/haskell-problem-1/</link>
+        <guid isPermaLink="true">http://haskell.haiqus.com/lessons/haskell/2015/09/10/haskell-problem-1/</guid>
         
         
-        <category>jekyll</category>
+        <category>lessons</category>
         
-        <category>update</category>
+        <category>haskell</category>
+        
+      </item>
+    
+      <item>
+        <title>100 days of haskell</title>
+        <description>&lt;p&gt;Today’s goal is to get started with some basic tools, resources, and a simple trick to get a bit comfortable on the interactive environment.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;tools:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://kitematic.com/&quot;&gt;Kitematic&lt;/a&gt; for managing Docker containers on MacOS&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://hub.docker.com/_/haskell/&quot;&gt;official haskell container&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://haskellformac.com/&quot;&gt;Haskell for Mac&lt;/a&gt; (costs $) IDE with interactive playground&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;resources:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://wiki.haskell.org/99_questions&quot;&gt;H-99: Ninety-Nine Haskell Problems&lt;/a&gt; small problems to teach the language&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://learnyouahaskell.com/chapters&quot;&gt;Learn You A Haskell&lt;/a&gt; popular book&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;tricks:
+    &lt;ul&gt;
+      &lt;li&gt;in GHCi, type &lt;code&gt;:info &amp;lt;function&amp;gt;&lt;/code&gt; to get the type signature for a function&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Future sessions will follow this format, plus the addition of a fourth “solutions” item to share solutions to the day’s problem from H-99.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 09 Sep 2015 19:00:00 -0500</pubDate>
+        <link>http://haskell.haiqus.com/lessons/haskell/2015/09/09/one-hundred-days-of-haskell/</link>
+        <guid isPermaLink="true">http://haskell.haiqus.com/lessons/haskell/2015/09/09/one-hundred-days-of-haskell/</guid>
+        
+        
+        <category>lessons</category>
+        
+        <category>haskell</category>
         
       </item>
     

@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Welcome to Jekyll!</title>
+    <title>haskell problem 1</title>
     <meta name="description" content="Blog entries related to the Haskell language
 ">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://haskell.haiqus.com/jekyll/update/2015/09/11/welcome-to-jekyll/">
+    <link rel="canonical" href="http://haskell.haiqus.com/lessons/haskell/2015/09/10/haskell-problem-1/">
 </head>
 
 
@@ -57,25 +57,51 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Welcome to Jekyll!</h1>
-    <p class="post-meta">Sep 11, 2015</p>
+    <h1 class="post-title">haskell problem 1</h1>
+    <p class="post-meta">Sep 10, 2015</p>
   </header>
 
   <article class="post-content">
-    <p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve --watch</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+    <ol>
+  <li>tools:
+    <ul>
+      <li>another installation is the <a href="https://www.haskell.org/platform/">official platform</a></li>
+      <li>once you have a working installation, the program <code>ghci</code> launches the interactive repl</li>
+    </ul>
+  </li>
+  <li>resources:
+    <ul>
+      <li>no new ones today</li>
+    </ul>
+  </li>
+  <li>tricks / techniques:
+    <ul>
+      <li>the solution below follows the standard sourcefile construction of Haskell code. but we can define functions “on the fly” by using the <code>let { }</code> constructor</li>
+    </ul>
+  </li>
+  <li>solutions:
+    <ul>
+      <li>as a sourcefile:</li>
+    </ul>
+  </li>
+</ol>
 
-<p>To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention <code>YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<!-- the markdown engine is not handling the Haskell code well -->
+<pre><code>myLast :: [a] -&gt; a
+myLast []     = error "empty list"
+myLast [x]    = x
+myLast (_:xs) = myLast xs</code></pre>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<ul>
+  <li>dynamically in GHCi:</li>
+</ul>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
-<span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span></code></pre></div>
-
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://github.com/jekyll/jekyll-help">Jekyll’s dedicated Help repository</a>.</p>
-
+<pre><code>let {
+  myLast2 []     = error "empty list"
+  myLast2 [x]    = x
+  myLast2 (_:xs) = myLast2 xs
+}</code></pre>
+<p>So the main (casual) observation is that a function has two components: the type declaration and the function implementation. When writing source code, the type declaration is required; when dynamically creating a function in the repl, the compiler infers the type signature from its definition. The function implementation mechanically works via pattern matching – a very powerful concept that we’ll eventually get around to learning in depth. Otherwise, a good first exercise!</p>
 
   </article>
 
