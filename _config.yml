@@ -1,0 +1,13 @@
+# Site settings
+title: haiqus | elegant code
+email: write@haiq.us
+description: > # this means to ignore newlines until "baseurl:"
+  Blog entries related to the Haskell language
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://haskell.haiqus.com" # the base hostname & protocol for your site
+twitter_username: haiqus
+github_username:  jared-prime
+
+# Build settings
+markdown: kramdown
+permalink: pretty
