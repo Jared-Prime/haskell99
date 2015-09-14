@@ -5,3 +5,6 @@ myLast ["cat", "dog"]
 myLast [1..1000]
 
 let { anotherLast [] = error "empty list"; anotherLast [x] = x; anotherLast (_:xs) = anotherLast xs }
+
+lastButOne [1..1000]
+lastButOne' [1..1000]
