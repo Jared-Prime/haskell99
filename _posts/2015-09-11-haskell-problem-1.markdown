@@ -34,4 +34,4 @@ myLast (_:xs) = myLast xs</code></pre>
   myLast2 [x]    = x
   myLast2 (_:xs) = myLast2 xs
 }</code></pre>
-So the main (casual) observation is that a function has two components: the type declaration and the function implementation. When writing source code, the type declaration is required; when dynamically creating a function in the repl, the compiler infers the type signature from its definition. The function implementation mechanically works via pattern matching -- a very powerful concept that we'll eventually get around to learning in depth. Otherwise, a good first exercise!
+So the main (casual) observation is that a function has two components: the type declaration and the function implementation. When writing source code, the type declaration is best practice but is not required. In general the compiler will attempt to infer the type signature from its definition. The function implementation mechanically works via pattern matching -- a very powerful concept that we'll eventually get around to learning in depth. Otherwise, a good first exercise!
