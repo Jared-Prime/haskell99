@@ -28,5 +28,8 @@ elementAtWithoutInfix (x:_) 1 = x
 elementAtWithoutInfix (_:xs) i = elementAtWithoutInfix xs (i -1)
 elementAtWithoutInfix _ _ = error "out of bounds"
 
-curried = elementAt [1,2,3]
--- curried n = [1,2,3] !! (n - 1)
+-- find the length of a list
+myLength :: [a] -> Int
+myLength []  = 0
+myLength [_] = 1
+myLength (_:xs) = 1 + myLength xs
