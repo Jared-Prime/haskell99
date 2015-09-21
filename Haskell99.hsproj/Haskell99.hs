@@ -33,3 +33,14 @@ myLength :: [a] -> Int
 myLength []  = 0
 myLength [_] = 1
 myLength (_:xs) = 1 + myLength xs
+
+-- reverse a list
+myReverse :: [a] -> [a]
+myReverse [] = []
+myReverse [x] = [x]
+myReverse (x:xs) = myReverse xs ++ [x]
+
+-- the prelude definition makes use of fold
+-- see the notes on this powerful function: https://wiki.haskell.org/Fold
+standardReverse :: [a] -> [a]
+standardReverse = foldl (flip (:)) []

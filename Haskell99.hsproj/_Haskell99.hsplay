@@ -29,3 +29,9 @@ myLength "bannana phone"
 
 let { alphabet = ['a'..'z'] }
 myLength alphabet
+
+myReverse [1, 2, 3]
+myReverse "cat"
+
+standardReverse [1, 2, 3]
+standardReverse "cat"
