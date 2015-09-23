@@ -34,6 +34,13 @@ myLength []  = 0
 myLength [_] = 1
 myLength (_:xs) = 1 + myLength xs
 
+-- with an accumulator, allowing tail optimization
+myLength' :: [a] -> Int
+myLength' xs = acc_Length xs 0
+                      where
+                        acc_Length [] n = n
+                        acc_Length (_:xs) n = acc_Length xs (n + 1)
+
 -- reverse a list
 myReverse :: [a] -> [a]
 myReverse [] = []
@@ -44,3 +51,13 @@ myReverse (x:xs) = myReverse xs ++ [x]
 -- see the notes on this powerful function: https://wiki.haskell.org/Fold
 standardReverse :: [a] -> [a]
 standardReverse = foldl (flip (:)) []
+
+
+-- detect a palindrome
+isPalindrome :: Eq a => [a] -> Bool
+isPalindrome xs = xs == (reverse xs)
+
+-- some recursion
+isPalindrome' []  = True
+isPalindrome' [_] = True
+isPalindrome' xs = (head xs) == (last xs) && (isPalindrome' $ init $ tail xs)
