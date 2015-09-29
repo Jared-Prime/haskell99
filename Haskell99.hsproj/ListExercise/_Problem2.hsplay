@@ -1,0 +1,5 @@
+-- Haskell Playground 1.0
+lastButOne [1..1000]
+lastButOneWithComposition [1..1000]
+lastButOne [1,2,3]
+lastButOneWithComposition [1]
