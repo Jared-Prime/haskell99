@@ -22,7 +22,7 @@ extra-source-files:
 extra-tmp-files:
 extra-doc-files:
 Executable Haskell99
-  main-is: Haskell99.hs
+  main-is: ListExercise/Problem9.hs
   buildable: True
   build-tools:
   cpp-options:
@@ -42,7 +42,9 @@ Executable Haskell99
   install-includes:
   include-dirs:
   hs-source-dirs:
-  other-modules:
+  other-modules: ListExercise.Problem3 ListExercise.Problem8
+                 ListExercise.Problem6 ListExercise.Problem7 ListExercise.Problem1
+                 ListExercise.Problem5 ListExercise.Problem4 ListExercise.Problem2
   ghc-prof-options:
   ghc-shared-options:
   ghc-options:

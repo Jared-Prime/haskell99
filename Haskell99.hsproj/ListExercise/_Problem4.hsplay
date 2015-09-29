@@ -1,0 +1,11 @@
+-- Haskell Playground 1.0
+length [1, 2]
+
+myLength [1,2]
+myLength [1..100]
+myLength "bannana phone"
+
+let { alphabet = ['a'..'z'] }
+myLength alphabet
+
+myLength' alphabet
