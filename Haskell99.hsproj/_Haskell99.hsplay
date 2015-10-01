@@ -1,5 +1,0 @@
--- Haskell Playground 1.0
-myLast []
-myLast ["cat"]
-myLast ["cat", "dog"]
-myLast [1..100]

@@ -1,0 +1,7 @@
+-- Haskell Playground 1.0
+myLast []
+myLast ["cat"]
+myLast ["cat", "dog"]
+myLast [1..1000]
+
+let { anotherLast [] = error "empty list"; anotherLast [x] = x; anotherLast (_:xs) = anotherLast xs }

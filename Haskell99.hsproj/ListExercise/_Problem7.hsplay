@@ -1,0 +1,3 @@
+-- Haskell Playground 1.0
+let { world = (AllTheWayDown[Turtle 1, Turtle 2, AllTheWayDown[Turtle 3, AllTheWayDown [Turtle 4]]]) }
+myFlatten world
