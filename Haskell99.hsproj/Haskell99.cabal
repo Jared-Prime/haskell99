@@ -43,9 +43,10 @@ Executable Haskell99
   include-dirs:
   hs-source-dirs:
   other-modules: ContinuedListExercise.Problem11
-                 ListExercise.Problem3 ListExercise.Problem8 ListExercise.Problem6
-                 ListExercise.Problem10 ListExercise.Problem7 ListExercise.Problem1
-                 ListExercise.Problem5 ListExercise.Problem4 ListExercise.Problem2
+                 ContinuedListExercise.Problem12 ListExercise.Problem3
+                 ListExercise.Problem8 ListExercise.Problem6 ListExercise.Problem10
+                 ListExercise.Problem7 ListExercise.Problem1 ListExercise.Problem5
+                 ListExercise.Problem4 ListExercise.Problem2
   ghc-prof-options:
   ghc-shared-options:
   ghc-options:
