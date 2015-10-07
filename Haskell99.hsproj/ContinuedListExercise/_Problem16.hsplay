@@ -1,0 +1,4 @@
+-- Haskell Playground 1.0
+dropEvery "abcd" 3
+dropEvery "" 2
+dropEvery [1..100] 2
