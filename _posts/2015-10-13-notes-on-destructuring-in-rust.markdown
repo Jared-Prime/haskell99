@@ -20,4 +20,4 @@ preview: "given a thing, take it apart and assign local references to each of th
     - does an imperative programmer coming to Rust have a cheat when it comes to thinking functionally? are guards a feature, a crutch, both, or a symptom of some deeper similarity between patterns and conditionals? (this question is valid for Haskell as well, since both have guards)
     - what really does it mean for a compiler to exhaustively check a program? how does that happen? (I’m really interested in an explanation beyond, “well, it compiles…”)
 
-reference: https://pzol.github.io/getting_rusty/posts/20140417_destructuring_in_rust/
+reference: [Piotr Zolnierek: Destructuring in Rust](https://pzol.github.io/getting_rusty/posts/20140417_destructuring_in_rust/)
