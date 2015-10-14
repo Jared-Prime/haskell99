@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "find the K'th element"
-date: 2015-10-13 00:00:00
+date: 2015-10-13 01:00:00
 categories:
   - destructuring
   - reading notes
