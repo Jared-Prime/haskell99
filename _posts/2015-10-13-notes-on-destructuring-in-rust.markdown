@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "find the K'th element"
+title: Notes on "Destructuring in Rust"
 date: 2015-10-13 00:00:00
 categories:
   - destructuring
