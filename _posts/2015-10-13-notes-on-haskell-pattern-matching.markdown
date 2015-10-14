@@ -20,4 +20,4 @@ preview: programming languages are not just a formalism
     - how does Haskell implement pattern matching? can we be assured that, under the hood, we’re not really faced with a spaghetti of conditional statements?
     - do patterns always provide more productivity than conditionals? if not, under what circumstances do they not?
 
-reference: http://blog.devinmcgloin.com/programming/2015/07/07/Haskell/
+reference: [Devin McGloin: Haskell Pattern Matching](http://blog.devinmcgloin.com/programming/2015/07/07/Haskell/)
