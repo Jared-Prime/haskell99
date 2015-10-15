@@ -1,0 +1,4 @@
+-- Haskell Playground 1.0
+slice "cat" 0 1
+slice "cat" 1 2
+slice "cat" 3 3
