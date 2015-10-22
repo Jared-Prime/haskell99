@@ -1,0 +1,4 @@
+-- Haskell Playground 1.0
+rotate "cat" 1
+rotate "cat" 2
+rotate "cat" 3
