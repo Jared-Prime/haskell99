@@ -1,4 +1,4 @@
-module ListExercise.Problem3 where
+module List1.Problem3 where
 -- Find the K'th element of a list. The first element in the list is number 1
 
 -- here's a naive solution, using the index operator `!!`

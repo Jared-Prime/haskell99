@@ -1,4 +1,4 @@
-module ListExercise.Problem9 where
+module List1.Problem9 where
 -- Pack consecutive duplicates of list elements into sublists
 -- using the simple solution from https://wiki.haskell.org/99_questions/Solutions/9
 pack :: (Eq a) => [a] -> [[a]]

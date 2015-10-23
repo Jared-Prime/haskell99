@@ -1,4 +1,4 @@
-module ContinuedListExercise.Problem16 where
+module List2.Problem16 where
 
 dropElem :: [a] -> Int -> [a]
 dropElem [] _ = []

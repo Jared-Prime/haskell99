@@ -1,5 +1,5 @@
-module ListExercise.Problem2 where
-import ListExercise.Problem1
+module List1.Problem2 where
+import List1.Problem1
 -- Find the last but one element of a list
 lastButOne :: [a] -> a
 lastButOne [x,_] = x

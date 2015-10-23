@@ -1,4 +1,4 @@
-module ContinuedListExercise.Problem15 where
+module List2.Problem15 where
 
 replicateList :: Int -> [a] -> [a]
 replicateList = concatMap . replicateElement

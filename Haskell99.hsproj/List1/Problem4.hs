@@ -1,4 +1,4 @@
-module ListExercise.Problem4 where
+module List1.Problem4 where
 
 -- find the length of a list
 myLength :: [a] -> Int

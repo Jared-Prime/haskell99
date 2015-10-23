@@ -1,4 +1,4 @@
-module ListExercise.Problem7 where
+module List1.Problem7 where
   
 -- flatten a nested list structure
 -- but what is a nested list structure? we'll have to make one
