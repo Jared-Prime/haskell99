@@ -1,0 +1,3 @@
+-- Haskell Playground 1.0
+replicateList 4 "aaa"
+replicateList 4 [1, 2, 3]
