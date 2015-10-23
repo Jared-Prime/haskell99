@@ -47,6 +47,7 @@ Executable Haskell99
                  List1.Problem4 List1.Problem2 List2.Problem20 List2.Problem12
                  List2.Problem11 List2.Problem15 List2.Problem17 List2.Problem18
                  List2.Problem16 List2.Problem14 List2.Problem19 List3.Problem21
+                 List3.Problem22
   ghc-prof-options:
   ghc-shared-options:
   ghc-options:

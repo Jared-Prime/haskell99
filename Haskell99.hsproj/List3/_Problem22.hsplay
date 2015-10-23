@@ -1,0 +1,4 @@
+-- Haskell Playground 1.0
+-- note that these are 1 indexed
+rangeExclusive "cat" 1 2
+rangeInclusive "cat" 1 2
