@@ -1,4 +1,4 @@
-module ContinuedListExercise.Problem17 where
+module List2.Problem17 where
   
 mySplit :: [a] -> Int -> ([a], [a])
 mySplit [] _ = ([],[])

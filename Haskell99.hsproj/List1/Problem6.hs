@@ -1,4 +1,4 @@
-module ListExercise.Problem6 where
+module List1.Problem6 where
   
 
 -- detect a palindrome

@@ -1,4 +1,4 @@
-module ListExercise.Problem1 where
+module List1.Problem1 where
   -- Find the last element of a list
 myLast :: [a] -> a
 myLast []     = error "Nothing in list!"

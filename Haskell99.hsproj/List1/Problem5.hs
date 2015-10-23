@@ -1,4 +1,4 @@
-module ListExercise.Problem5 where
+module List1.Problem5 where
 
 -- reverse a list
 myReverse :: [a] -> [a]

@@ -1,6 +1,6 @@
-module ContinuedListExercise.Problem11 where
-import ListExercise.Problem4
-import ListExercise.Problem9
+module List2.Problem11 where
+import List1.Problem4
+import List1.Problem9
 
 data ListEncoding a = Single a | Multiple Int a deriving Show
 

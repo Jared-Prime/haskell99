@@ -1,4 +1,4 @@
-module ListExercise.Problem8 where
+module List1.Problem8 where
 -- Eliminate consecutive duplicates of list elements
 uniq :: (Eq a) => [a] -> [a]
 uniq list = acc_uniq list []

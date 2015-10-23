@@ -1,5 +1,5 @@
-module ContinuedListExercise.Problem12 where
-import ContinuedListExercise.Problem11
+module List2.Problem12 where
+import List2.Problem11
 
 -- three things to note in this execercise:
 --   1. the pattern matching looks exactly like the type construction
