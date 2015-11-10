@@ -1,4 +1,15 @@
-What We’ve Learned So Far
+---
+layout: post
+title: What We've Learned So Far
+date: 2015-11-10 00:00:00
+categories:
+  - reading notes
+  - lessons
+  - haskell
+preview: a recap on the first quarter of our journey
+---
+
+# What We’ve Learned So Far
 
 we’ve actually been exposed to tons of interesting language design features
 
